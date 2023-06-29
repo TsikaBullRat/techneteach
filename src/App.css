@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+.landing_body{
+  display: flex;
+  height: 100vh;
+  width: auto;
+  overflow: hidden;
+}
+.landing_main{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.landing_main>img{
+  position: fixed;
+  width: 450px;
+  height: 350px;
+  top: 28vh;
+  left: 35vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.landing_home{
+  background-color: aquamarine;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Box slide array*/
+.top_box{
+  position: fixed;
+  width: 64vw;
+  height: 25vh;
+  background-color: #7a6051;
+  top: 30px;
+  right: 100px;
+}
+.right_box{
+  position: fixed;
+  width: 30vw;
+  height: 60vh;
+  background-color: #5a4c43;
+  bottom: 70px;
+  right: 100px;
+}
+
+.bottom_box{
+  position: fixed;
+  width: 30vw;
+  height: 30vh;
+  background-color: #7a6051;
+  bottom: 70px;
+  right: 700px;
+}
+
+.left_box{
+  position: fixed;
+  width: 25vw;
+  height: 90vh;
+  background-color: #5a4c43;
+  bottom: 70px;
+  left: 50px;
+}
+
+
+/*Home Page*/
+
+.home_main{
+  width: 100vw;
+  height: auto;
+}
+
+.home_banner{
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.carousel-box{
+  width: 600px;
+  height: 350px;
+  background-color: #000;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.prev{
+  position: absolute;
+  left: -100px;
+}
+
+.next{
+  position: absolute;
+  right: -100px;
+}
+
+.active{
+  width: 1200px;
+  height: 700px;
+  background-color: #000;
+  color: #fff;
+}
+
+.home_learn{
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.def-block-home-learn{
+  width: 40vw;
+  height: 80vh;
+  background-color: purple;
+}
+
+.list-block-home-learn{
+  width: 40vw;
+  height: 80vh;
+  background-color: aqua;
+}
+
+/* Contacts */
+.contacts_main{
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
 }

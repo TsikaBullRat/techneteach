@@ -1,25 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import { Landing, Home, About, Contacts, News, Store, Learning } from "./pages";
+import { gsap } from "gsap"
+import "./App.css"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Contacts/>
 }
 
 export default App;
