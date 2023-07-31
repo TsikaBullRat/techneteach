@@ -19,7 +19,7 @@ export const Landing = () =>{
 
     return(
         <div className="landing_body">
-            <Comp />
+            <Start />
         </div>
     )
 }

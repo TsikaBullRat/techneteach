@@ -1,3 +1,7 @@
+//Imports
+export { news, addArticles, Input, Socials, Nav } from "../components"
+
+//Exports
 export { Landing } from "./Landing/Landing"
 export { Home } from "./Home/Home"
 export { About } from "./About/Aboot"
