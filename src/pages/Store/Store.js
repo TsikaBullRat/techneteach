@@ -5,6 +5,7 @@
 *       pictures: ["Link"],
 *       specs: ["specs"]
 *       description: "details"
+*       type: "product/type"
 *    }
 */
 

@@ -1,4 +1,14 @@
 /* General */
+.mini-window{
+  border: solid 5px #7a6051;
+  border-radius: 25px;
+  position: absolute;
+}
+.mini-window>svg{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 .standard-button{
   width: 100px;
   height: 30px;
@@ -150,8 +160,9 @@ footer{
 /*Navigation*/
 header{
   display: flex;
-  position: sticky;
+  position: fixed;
   top: 0;
+  align-items: center;
   justify-content: space-between;
   height: 60px;
   width: 100vw;
@@ -276,12 +287,17 @@ header{
 }
 
 .carousel-box{
-  width: 20%;
-  height: 30%;
+  width: 25%;
+  height: 40%;
   color: #fff;
   transition: 1s;
   position: relative;
   cursor: pointer;
+}
+.carousel-button{
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }
 .carousel-box>img{
   height: 100%;
@@ -304,8 +320,9 @@ header{
 
 .prev{
   position: absolute;
-  top: 100px;
-  left: 20px;
+  bottom: 50px;
+  /* left: 20px; */
+  transition: 2s;
 }
 
 .active > p{
@@ -319,38 +336,46 @@ header{
 
 .next{
   position: absolute;
-  top: 100px;
-  right: 20px;
+  top: 50px;
+  /* right: 20px; */
+  transition: 1s;
 }
 
 .active{
   position: absolute;
-  top: 200px;
+  top: 150px;
   width: 60%;
   height: 75%;
   color: #fff;
   z-index: 1;
+  transition: 1s;
 }
 
-.home_learn{
+.home_services{
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.def-block-container{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 100px;
 }
 
-.def-block-home-learn{
+.def-block-home-services{
   width: 40vw;
   height: 80vh;
   background-color: #5a4c43;
   border-radius: 25px;
   color: #fff;
 }
-.def-block-home-learn>h1{
+.def-block-home-services>h1{
   margin-left: 10%;
 }
-.def-block-home-learn>h3{
+.def-block-home-services>h3{
   width: 70%;
   margin-left: 15%;
 }
@@ -393,7 +418,32 @@ header{
   width: auto;
   height: 100vh;
   display: flex;
-  /* overflow: hidden; */
+  position: relative;
+  color: #fff;
+}
+
+.product-images>h1{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+}
+
+.product-images>p{
+  width: 500px;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  z-index: 1;
+}
+
+.product-images>ul{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .image-contoller{
@@ -619,9 +669,17 @@ header{
   align-items: center;
 }
 .social-box{
-  background-color: #000;
   width: auto;
   height: 35px;
+}
+
+.social-box>a:hover >svg>path{
+  fill: #7a6051;
+  stroke: #fff;
+}
+.social-box>a:hover >svg>g>path{
+  fill: #7a6051;
+  stroke: #fff;
 }
 
 .social-box> a{
@@ -637,6 +695,7 @@ header{
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 .learning-def-box{
   background-color: #7a6051;
@@ -647,6 +706,7 @@ header{
   top: 130px;
   left: 250px;
   color: #fff;
+  transition: 1s;
 }
 .learning-def-box> h1{
   margin: 30px 30px;
@@ -664,15 +724,108 @@ header{
   bottom: 50px;
   right: 300px;
   color: #fff;
+  transition: 1s;
+}
+.learning-info-box{
+  background-color: #7a6051;
+  width: 25vw;
+  height: 40vh;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 50px;
+  left: 250px;
+  color: #fff;
+  transition: 1s;
+}
+.hide-right{
+  right: -1000px
+}
+.hide-left{
+  left: -1000px
+}
+.def-right{
+  left: auto;
+  right: 250px;
 }
 .learning-detail-box>h2{
   margin:  30px 30px;
 }
+.learning-detail-box>h3{
+  margin:  30px 30px;
+}
 .learning-detail-box>.input1{
+  margin-left: 40px;
+}
+.learning-info-box>h2{
+  margin:  30px 30px;
+}
+.learning-info-box>h3{
+  margin:  30px 30px;
+}
+.learning-info-box>.input1{
   margin-left: 40px;
 }
 .lms-button{
   position: absolute;
   bottom: 20px;
   right: 20px;
+}
+
+.lms-button2{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.canvas{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.lms-header>a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  width: auto;
+  height: 67px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -5px;
+  left: 20px;
+  /* background-color: #000; */
+}
+.lms-header>a>svg{
+  position: relative;
+  top: 3px;
+  margin: 0 5px;
+  width: 30px;
+  height: 30px;
+  /* background-color: aqua; */
+}
+
+.lms-header>svg{
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  width: auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 20px;
+  cursor: pointer;
+}
+
+.lms-header>a:hover{
+  background-color: #fff;
+  color: #7a6051;
+}
+.lms-header>svg:hover{
+  background-color: #fff;
+  color: #7a6051;
 }

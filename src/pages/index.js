@@ -1,5 +1,5 @@
 //Imports
-export { news, addArticles, Input, Socials, Nav } from "../components"
+export { news, addArticles, Input, Socials, Nav, auth } from "../components"
 
 //Exports
 export { Landing } from "./Landing/Landing"

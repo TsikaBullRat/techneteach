@@ -5,7 +5,7 @@ import { news } from "../"
 export const Banner = () =>{
 
     const [ cache, setCache] = useState(null)
-    const [ set, setSet ] = useState([1, 2, 0])
+    const [ set, setSet ] = useState([0, 1, 2])
     const [ dial, setDial ] = useState(0)
 
     const Clean = async()=>{
@@ -19,15 +19,15 @@ export const Banner = () =>{
     const Changer = (to) =>{
         switch(to){
             case 0:
-                setSet([2, 0, 1])
+                setSet([1, 2, 0])
                 setDial(1)
                 break
-            case 0:
-                setSet([0, 1, 2])
+            case 1:
+                setSet([2, 0, 1])
                 setDial(2)
                 break
-            case 0:
-                setSet([1, 2, 0])
+            case 2:
+                setSet([0, 1, 2])
                 setDial(0)
                 break
         }
@@ -40,7 +40,6 @@ export const Banner = () =>{
     useEffect(()=>{
         setTimeout(()=>{
             Changer(dial)
-            console.log("It's running")
         }, 10000)
     }, [dial])
 

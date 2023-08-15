@@ -1,7 +1,6 @@
 import { Banner } from "./HomeBanner"
-import { Learning } from "./HomeLearn"
+import { Services } from "./HomeServices"
 import { About } from "./HomeAbout"
-import { Store } from "./HomeStore"
 import { Nav } from "../"
 
 
@@ -11,8 +10,7 @@ export const Home = () =>{
             <Nav />
             <Banner />
             <About />
-            <Learning />
-            <Store />
+            <Services />
             <hr/>
         </div>
     )

@@ -14,7 +14,7 @@ export const Nav = () =>{
                 <li><a href={`/about`}>About</a></li>
                 <li><a href={`/news`}>News</a></li>
                 <li><a href={`/contacts`}>Contacts</a></li>
-                <li><a href={`learning`}><Icon icon="gg:profile" color="white" /></a></li>
+                <li><a href={`/learning`}><Icon icon="gg:profile" color="white" /></a></li>
             </ul>
 
         </header>

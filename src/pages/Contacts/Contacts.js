@@ -4,6 +4,15 @@ import { Banner } from "./ContactsBanner"
 
 
 export const Contacts = () =>{
+
+    //For Testing
+    const links ={
+        web: "https://www.google.com",
+        facebook: "https://www.facebook.com",
+        github: "https://www.github.com",
+        instagram: "https://www.instagram.com",
+        tiktok: "https://www.tiktok.com",
+    }
     
     const [ name, setName ] = useState("")
     const [ last, setLast ] = useState("")
@@ -20,7 +29,7 @@ export const Contacts = () =>{
                             <h1>Talk to us</h1>
                             <h3>Email: TechneTeach@gmail.com</h3>
                             <h3>Phone: 0812536014</h3>
-                            <Socials/>
+                            <Socials data={links}/>
                         </div>
                         <div className="email-box">
                             <h3>Join our email group for all info on TechneTeach and the latest in tech news</h3>

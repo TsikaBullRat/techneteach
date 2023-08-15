@@ -15,7 +15,7 @@ export const Articles = ({data}) =>{
                     <div className="article-text">
                         <p>{data.story}</p>
                     </div>
-                    <Socials />
+                    <Socials data={data.links}/>
                     <img src={data.picture} className="article-picture"/>
                 </>
             ):null}

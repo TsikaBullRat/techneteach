@@ -9,8 +9,10 @@ export const Dott = styled.button`
 `
 
 export const Slab = styled.div`
-    width: 75%;
-    height: 12%;
+    width: 70%;
+    height: 10%;
     margin: 5% 0;
+    padding-left: 20px;
     background-color: #fff;
+    border-radius: 25px;
 `
