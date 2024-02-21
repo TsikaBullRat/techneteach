@@ -6,6 +6,8 @@ import { gsap } from "gsap"
 import "./App.css"
 import { Nav, Footer } from "./components";
 
+//This is a change added
+
 const router = createBrowserRouter([
   {
     path: "/landing",
