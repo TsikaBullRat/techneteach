@@ -7,6 +7,7 @@ import "./App.css"
 import { Nav, Footer } from "./components";
 
 //This is a change added
+//Here is a second comment
 
 const router = createBrowserRouter([
   {
